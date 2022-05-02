@@ -1,0 +1,218 @@
+
+/*обнуление*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav, footer, header, aside {display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1 h2 h3 h4 h5 h6{font-size: inherit;font-weight: 400;}
+/*...........................*/
+.arial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fontsize30{
+    font-size: 30px;
+}
+.italic{
+    font-style: italic;
+}
+.font700{
+    font-weight: 700;
+}
+.colorred{
+    color: rgb(253, 6, 6);
+}
+.textright{
+    /*text-align: right;*/
+    text-align: center;
+}
+.decoration{
+    text-decoration: underline;
+    /*text-decoration: overline;*/
+    /*text-decoration: line-through;*/
+    /*text-decoration: none;*/
+}
+.shadow{
+    text-shadow: 1px 1px 1px #000000;
+}
+.upercase{
+    text-transform: capitalize;
+    /*text-transform: lowercase;*/
+    /*text-transform: uppercase;*/
+    /*text-transform: none;*/
+}
+.ident{
+    text-indent: 50px;
+    /*отступ от края*/
+}
+.ispace{
+    /*letter-spacing: 5px;*/
+    /*отступы между букв*/
+    word-spacing: 5px;
+    /*растояние между строк*/
+}
+.whitespace{
+    white-space: nowrap;
+    /*выстраиваеться в одну линию и не ломаеться*/
+    /*white-space: normal;*/
+}
+.example-shadow-2 {
+    background: beige;
+    text-align: center;
+}
+.example-shadow-2 a {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 15px 35px;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+    background: #55acee;
+    box-shadow: 0 5px 0 #3C93D5;
+    transition: .3s;
+}
+.example-shadow-2 a:hover {
+    background: #6FC6FF;
+}
+.example-shadow-1 {
+    background: #e6e3df;
+    text-align: center;
+}
+.example-shadow-1 span {
+    margin: 50px;
+    height: 100px;
+    width: 200px;
+    display: inline-block;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+.example-shadow-3 {
+    background: #e8e8e8;
+    text-align: center;
+}
+.example-shadow-3 span {
+    background: white;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 50px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+/* 4 efecta*/
+body {
+    margin: 0;
+    background:url(https://html5book.ru/wp-content/uploads/2015/10/background54.png);
+}
+.span-shadow {text-align:center}
+.span-shadow span {
+    display: inline-block;
+    margin: 15px;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    transition: .2s linear;
+}
+.span-shadow span:nth-child(1) {background:#3A2F28}
+.span-shadow span:nth-child(1):hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #3A2F28;
+}
+.span-shadow span:nth-child(2) {background:#C1F1E4}
+.span-shadow span:nth-child(2):hover { 
+    box-shadow: 200px 0 0 0 rgba(0,0,0,.3) inset;
+}
+.span-shadow span:nth-child(3) {background:#D2973D}
+.span-shadow span:nth-child(3):hover {
+    box-shadow: 0 0 0 2px #D2973D inset, 0 0 0 4px white inset;
+}
+.span-shadow span:nth-child(4) {
+    background: #C76637;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.span-shadow span:nth-child(4):hover {
+    box-shadow: 2px 2px white, 4px 4px #C76637;
+    top: -4px;
+    left: -4px;
+}
+
+*{box-sizing:border-box}
+body {
+height: 100vh;
+}
+@keyframes loader {
+0% {transform:rotate(-45deg)}
+50%{transform:rotate(-135deg)}
+100%{transform:rotate(-225deg)}}
+@keyframes span-1 {
+0% {transform:translate(0);}50%{transform:translate(-50px, 0);border-color:#EE4D68}
+100%{transform:translate(0);}}
+@keyframes span-2 {
+0%{transform:translate(0);}
+50%{transform:translate(50px, 0);border-color:#875678}
+100%{transform:translate(0);}}
+@keyframes span-3 {
+0%{transform:translate(0);}
+50%{transform:translate(0, -50px);border-color:#FF9900}
+00%{transform:translate(0);}}
+@keyframes span-4 {
+0%{transform:translate(0);}
+50%{transform:translate(0, 50px);border-color:#00E4F6}
+100%{transform:translate(0);}}
+.loader {
+width: 50px;
+height: 50px;
+position: relative;
+animation: loader 2s infinite ease-in-out;
+}
+.loader span {
+width: 50px;
+height: 50px;
+position: absolute;
+left: 0;
+top: 0;
+border: 4px solid #0B1B48;
+}
+.loader span:nth-child(1) {
+animation: span-1 2s ease-in-out infinite;
+}
+.loader span:nth-child(2) {
+animation: span-2 2s ease-in-out infinite;
+}
+.loader span:nth-child(3) {
+animation: span-3 2s ease-in-out infinite;
+}
+.loader span:nth-child(4) {
+animation: span-4 2s ease-in-out infinite;
+}
+/*........*/
